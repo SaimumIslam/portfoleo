@@ -34,3 +34,31 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+# VPS
+
+## Install Node
+
+- `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash` [current version](https://github.com/nvm-sh/nvm/)
+- `source ~/.bashrc`
+- `nvm install --lts`
+- `nvm ls`
+- `nvm use version` switch specified version
+
+## Install git
+
+- `sudo apt install git`
+- `git --version`
+
+## Install project
+
+- `npm install -g pnpm` install pnpm
+- `pnpm install --prod` istall without dev depen
+
+# Setup pm2
+
+- `npm install pm2@latest -g` install pm2
+- `pm2 start ecosystem.config.js`
+- `pm2 logs`
+- `pm2 stop mosque`
+- `pm2 delete mosque`
