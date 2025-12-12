@@ -54,11 +54,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - `npm install -g pnpm` install pnpm
 - `pnpm install --prod` istall without dev depen
+- `pnpm build` istall without dev depen
 
 # Setup pm2
 
 - `npm install pm2@latest -g` install pm2
 - `pm2 start ecosystem.config.js`
 - `pm2 logs`
-- `pm2 stop mosque`
-- `pm2 delete mosque`
+- `pm2 stop saimum-portfoleo`
+- `pm2 delete saimum-portfoleo`

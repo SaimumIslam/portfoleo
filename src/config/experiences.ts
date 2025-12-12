@@ -37,7 +37,7 @@ const EXPERIENCES = [
     job: true,
     location: "Khulna, Bangladesh; Seasonal",
     href: "https://www.facebook.com/edge.kucse/",
-    duration: "Part-Time |Apr 2025 – Jul 2025",
+    duration: "Part-Time |Apr 2025 – Jun 2025",
     description: `Served as an Industrial Expert Trainer for the EDGE Project, conducting hands-on training in Python and Data Science, guiding participants with practical coding exercises and project-based learning.`,
     tasks: [
       "Conducted workshops on Python Programming and Basic Data Science for multiple participant batches.",

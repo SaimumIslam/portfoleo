@@ -11,8 +11,6 @@ const about = {
   sentences: [
     "Full-stack software engineer building scalable digital solutions.",
     "Research-driven developer with experience in ML and NLP.",
-    "Competitive programmer turned industry-focused engineer.",
-    "Creator of impactful personal and academic projects.",
   ],
   descriptions: [
     "Hi there! I’m Saimum Islam — a full-stack software engineer with a strong foundation in computer science and over five years of experience delivering scalable, user-focused digital solutions.",
@@ -29,47 +27,5 @@ const about = {
     github: "https://github.com/Saimumislam",
     researchgate: "https://www.researchgate.net/profile/Saimum-Islam",
   },
-  skills: [
-    {
-      name: "React",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    {
-      name: "Django Rest",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/djangorest/djangorest-original.svg",
-    },
-    {
-      name: "React Native",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/reactnative/reactnative-original.svg",
-    },
-    {
-      name: "Node Js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
-    {
-      name: "Next.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-    },
-    {
-      name: "Python",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    },
-    {
-      name: "JavaScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    },
-    {
-      name: "TypeScript",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    },
-    {
-      name: "HTML5",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    },
-    {
-      name: "CSS3",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    },
-  ],
 };
 export default about;
