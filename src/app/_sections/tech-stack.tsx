@@ -29,6 +29,9 @@ import {
   ReactNativeIcon,
   AwsIcon,
   LatexIcon,
+  NumpyIcon,
+  PandasIcon,
+  ScikitLearnIcon,
 } from "@/components/icons";
 
 function TechStackSection() {
@@ -61,7 +64,11 @@ function TechStackSection() {
     { name: "Docker", icon: DockerIcon },
     { name: "Git", icon: GitIcon },
     { name: "Aws", icon: AwsIcon },
+
     { name: "Latex", icon: LatexIcon },
+    { name: "Numpy", icon: NumpyIcon },
+    { name: "Pandas", icon: PandasIcon },
+    { name: "ScikitLearn", icon: ScikitLearnIcon },
   ];
   return (
     <section className=" z-10 border-x full-line-bottom relative">
