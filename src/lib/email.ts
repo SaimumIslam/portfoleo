@@ -1,3 +1,5 @@
+"use server";
+
 import { Resend } from "resend";
 
 interface ContactData {
@@ -166,8 +168,8 @@ function createEmailTemplate({ name, email, message }: ContactData): string {
     <body>
         <div class="email-container">
             <div class="header">
-                <h1>📩 New Contact Form Submission</h1>
-                <p>You have received a new message from your website</p>
+                <h1>Contact Form Clients</h1>
+                <p>You have received a new message from your portfoleo</p>
             </div>
             
             <div class="content">
@@ -175,45 +177,32 @@ function createEmailTemplate({ name, email, message }: ContactData): string {
                     <h2>Contact Details</h2>
                     
                     <div class="form-field">
-                        <label class="form-label">👤 Full Name</label>
+                        <label class="form-label">Client Name</label>
                         <div class="form-value">${name}</div>
                     </div>
                     
                     <div class="form-field">
-                        <label class="form-label">📧 Email Address</label>
+                        <label class="form-label">Client Email</label>
                         <div class="form-value">
                             <a href="mailto:${email}" style="color: #667eea; text-decoration: none;">${email}</a>
                         </div>
                     </div>
                     
                     <div class="form-field message-field">
-                        <label class="form-label">💬 Message</label>
+                        <label class="form-label">Message</label>
                         <div class="form-value">${message}</div>
                     </div>
                 </div>
                 
                 <div class="contact-info">
-                    <h3>📞 Quick Actions</h3>
+                    <h3>Quick Actions</h3>
                     <p><strong>Reply:</strong> <a href="mailto:${email}" style="color: #667eea;">Click to reply directly</a></p>
-                    <p><strong>Add to contacts:</strong> ${name} &lt;${email}&gt;</p>
-                </div>
-                
-                <div class="timestamp">
-                    📅 Received on: ${new Date().toLocaleString("en-US", {
-                      weekday: "long",
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                      hour: "2-digit",
-                      minute: "2-digit",
-                      timeZoneName: "short",
-                    })}
                 </div>
             </div>
             
             <div class="footer">
-                <p><strong>Contact Form Notification</strong></p>
-                <p>This email was automatically generated from your website's contact form.</p>
+                <p><strong>Contact Notification</strong></p>
+                <p>This email was automatically generated from saimum.me.</p>
             </div>
         </div>
     </body>
