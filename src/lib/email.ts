@@ -225,7 +225,7 @@ export async function sendMail({ name, email, message }: ContactData) {
   const subject = `New Contact Form Submission from ${name}`;
   const htmlBody = createEmailTemplate({ name, email, message });
 
-  const resend = new Resend(process.env.EMAIL_API);
+  const resend = new Resend(process.env.NEXT_PUBLIC_EMAIL_API);
 
   try {
     resend.emails.send({

@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
@@ -168,7 +169,11 @@ function ContactMeSection() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" disabled={form.formState.isSubmitting}>
+                <Button
+                  className="cursor-pointer"
+                  type="submit"
+                  disabled={form.formState.isSubmitting}
+                >
                   {form.formState.isSubmitting ? (
                     "Sending"
                   ) : (
