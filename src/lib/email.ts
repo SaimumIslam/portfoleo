@@ -211,7 +211,7 @@ function createEmailTemplate({ name, email, message }: ContactData): string {
 }
 
 export async function sendMail({ name, email, message }: ContactData) {
-  const subject = `New Contact Form Submission from ${name}`;
+  const subject = `Contact email from ${name}`;
   const htmlBody = createEmailTemplate({ name, email, message });
 
   const resend = new Resend(process.env.NEXT_PUBLIC_EMAIL_API);

@@ -18,6 +18,7 @@ const EXPERIENCES = [
       "React Native",
       "Next.js",
       "Django REST",
+      "Django",
       "Koa.js",
       "MongoDB",
       "MySQL",
