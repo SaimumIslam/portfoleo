@@ -28,10 +28,10 @@ const education = [
     description:
       "Studied from Class 6 to 10 at Kumira ML. High School, a Bangla medium school affiliated with the Jessore board.",
     points: [
-      "Classes attended: 6 to 10",
-      "Focused on academic excellence and board preparation",
-      "Enhanced communication and reasoning skills",
-      "Foundation in core subjects like English, Math, and Science",
+      "Classes attended: 6 to 10.",
+      "Focused on academic excellence and board preparation.",
+      "Enhanced communication and reasoning skills.",
+      "Foundation in core subjects like English, Math, and Science.",
     ],
   },
 ];

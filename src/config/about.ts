@@ -13,7 +13,7 @@ const about = {
     "Research-driven developer with experience in ML and NLP.",
   ],
   descriptions: [
-    "Hi there! I’m Saimum Islam — a full-stack software engineer with a strong foundation in computer science and over five years of experience delivering scalable, user-focused digital solutions.",
+    "Hi there! I’m Saimum Islam — a full-stack software engineer with a strong foundation in computer science and over 5 years of experience delivering scalable, user-focused digital solutions.",
     "I specialize in JavaScript, TypeScript, React, Next.js, React Native, Django REST, and Koa.js, along with modern tools like Tailwind CSS, Shadcn UI, and Material UI to build clean and intuitive interfaces.",
     "My journey began through competitive programming and formal education in CSE, later expanding into industry-grade engineering and academic research in machine learning and natural language processing.",
     "Beyond engineering, I enjoy exploring AI in education, writing technical content, and developing projects that combine research insights with real-world impact.",

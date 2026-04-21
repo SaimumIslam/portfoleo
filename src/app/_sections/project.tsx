@@ -29,7 +29,7 @@ function ProjectSection() {
   return (
     <section className="border-x full-line-bottom relative">
       <h2 className="pl-4 text-2xl font-semibold relative full-line-bottom ">
-        Projects
+        Personal Projects
       </h2>
       <div>
         {filteredProjects.map((project, index) => (
