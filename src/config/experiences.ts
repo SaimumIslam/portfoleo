@@ -12,6 +12,7 @@ const EXPERIENCES = [
       "Built modular assessment and reporting tools enabling dynamic form generation, customizable evaluation methods, and automated progress tracking.",
       "Enhanced learning analytics and system reliability via update tracking, soft delete functionality, and structured data recovery mechanisms.",
       "Implemented personalized student dashboards, attendance tracking, certificate generation, and timeline-based study planning features.",
+      "Managed cloud infrastructure and server operations on AWS, including deployment, monitoring, performance optimization, and proactive maintenance to ensure high availability and system reliability.",
     ],
     badge: [
       "React.js",
