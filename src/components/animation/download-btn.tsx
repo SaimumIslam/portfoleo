@@ -10,7 +10,7 @@ const DownloadButton = ({ label = "Download Resume" }: { label?: string }) => {
   const randomChars = (length: number) => {
     return Array.from(
       { length },
-      () => charset[Math.floor(Math.random() * charset.length)]
+      () => charset[Math.floor(Math.random() * charset.length)],
     ).join("");
   };
 
@@ -33,7 +33,7 @@ const DownloadButton = ({ label = "Download Resume" }: { label?: string }) => {
   }, [label]);
 
   return (
-    <a download href="/saimum_academic.pdf">
+    <a download href="/saimum_resume.pdf">
       <Button
         size="sm"
         variant="outline"
