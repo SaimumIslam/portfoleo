@@ -1,6 +1,9 @@
 const SITE = {
-  title: "Software Engineer",
-  description: "I am a Passionate Software Developer",
+  url: "https://saimum.me",
+  name: "Saimum Islam",
+  title: "Saimum Islam — Software Engineer",
+  description:
+    "Saimum Islam — Full-stack software engineer specializing in React, Next.js, Django REST, and Koa.js, with published research in NLP and machine learning.",
   keywords: [
     "saimum",
     "islam",

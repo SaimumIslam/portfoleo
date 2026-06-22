@@ -21,7 +21,7 @@ import { Input } from "@/components/ui/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Textarea } from "@/components/ui/textarea";
 
-import { sendMail } from "@/lib/email";
+const CONTACT_EMAIL = "saimumislam27@gmail.com";
 
 const FormSchema = z.object({
   name: z.string().min(2, {
@@ -42,12 +42,13 @@ function ContactMeSection() {
       message: "",
     },
   });
-  async function onSubmit(data: z.infer<typeof FormSchema>) {
-    await sendMail({
-      email: data.email,
-      name: data.name,
-      message: data.message,
-    });
+  function onSubmit(data: z.infer<typeof FormSchema>) {
+    const subject = `Contact from ${data.name}`;
+    const body = `${data.message}\n\nFrom: ${data.name} <${data.email}>`;
+    const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailto;
     setSubmitted(true);
     form.reset();
   }
