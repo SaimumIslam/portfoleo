@@ -33,7 +33,7 @@ const DownloadButton = ({ label = "Download Resume" }: { label?: string }) => {
   }, [label]);
 
   return (
-    <a download href="/portfoleo/saimum_resume.pdf">
+    <a download href="/saimum_resume.pdf">
       <Button
         size="sm"
         variant="outline"

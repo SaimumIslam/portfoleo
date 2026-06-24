@@ -17,7 +17,7 @@ function ProfileSection() {
       <div className="shrink-0 border-r p-1">
         <Image
           className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none"
-          src="/portfoleo/profile.webp"
+          src="/profile.webp"
           alt="profile"
           loading="eager"
           width={400}
