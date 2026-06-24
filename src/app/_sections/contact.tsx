@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 
-import { Forward, Mail, MailCheck, UserRound } from "lucide-react";
+import { Forward, MailCheck, UserRound } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -27,7 +27,6 @@ const FormSchema = z.object({
   name: z.string().min(2, {
     message: "Name is required and must be at least 2 characters.",
   }),
-  email: z.string().email("Please enter a valid email address."),
   message: z.string().min(2, {
     message: "Message is required and must be at least 2 characters.",
   }),
@@ -38,13 +37,12 @@ function ContactMeSection() {
     resolver: zodResolver(FormSchema),
     defaultValues: {
       name: "",
-      email: "",
       message: "",
     },
   });
   function onSubmit(data: z.infer<typeof FormSchema>) {
     const subject = `Contact from ${data.name}`;
-    const body = `${data.message}\n\nFrom: ${data.name} <${data.email}>`;
+    const body = `${data.message}\n\nFrom: ${data.name}`;
     const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
@@ -118,30 +116,6 @@ function ContactMeSection() {
                           />
                           <div className="text-muted-foreground/80 pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 peer-disabled:opacity-50">
                             <UserRound size={16} />
-                          </div>
-                        </div>
-                      </FormControl>
-
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email</FormLabel>
-                      <FormControl>
-                        <div className="relative">
-                          <Input
-                            className="peer ps-9 pe-9 font-mono"
-                            placeholder="saimum@gmail.com"
-                            type="text"
-                            {...field}
-                          />
-                          <div className="text-muted-foreground/80 pointer-events-none absolute inset-y-0 start-0 flex items-center justify-center ps-3 peer-disabled:opacity-50">
-                            <Mail size={16} />
                           </div>
                         </div>
                       </FormControl>
