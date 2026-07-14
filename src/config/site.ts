@@ -25,7 +25,7 @@ const SITE = {
     "nlp",
     "ai",
   ],
-  lastUpdatedAt: "2025-12-09",
+  lastUpdatedAt: "2026-07-14",
   author: {
     name: "Saimum",
     url: "https://www.linkedin.com/in/saimum27/",

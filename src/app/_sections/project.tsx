@@ -17,7 +17,16 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 
-import PROJECTS from "@/config/projects";
+import PROJECTS, { type Platform } from "@/config/projects";
+
+const PLATFORM_LABELS: Record<Platform, string> = {
+  web: "Web",
+  desktop: "Desktop",
+  android: "Android",
+  mobile: "Mobile",
+  cli: "CLI",
+  wearos: "Wear OS",
+};
 
 function ProjectSection() {
   const [openItem, setOpenItem] = useState("project-1");
@@ -25,7 +34,10 @@ function ProjectSection() {
   const toggleShow = () => {
     setShowMore((prev) => !prev);
   };
-  const filteredProjects = showMore ? PROJECTS : PROJECTS.slice(0, 4);
+  const visibleProjects = PROJECTS.filter((project) => !project.hidden);
+  const filteredProjects = showMore
+    ? visibleProjects
+    : visibleProjects.slice(0, 4);
   return (
     <section className="border-x full-line-bottom relative">
       <h2 className="pl-4 text-2xl font-semibold relative full-line-bottom ">
@@ -41,7 +53,7 @@ function ProjectSection() {
             key={index}
           >
             <AccordionItem value={`project-${project.id}`}>
-              <AccordionTrigger aria-label={project.createdAt}>
+              <AccordionTrigger aria-label={project.title}>
                 <div className="flex items-center justify-between p-4 h-full w-fit ">
                   <div className="size-5 shrink-0">
                     <FolderGit2 />
@@ -50,16 +62,18 @@ function ProjectSection() {
                 <div className="flex-1 flex flex-col items-start justify-center py-4 pl-4 border-l font-mono gap-1 h-full">
                   <h3 className="text-balance font-medium text-base leading-snug flex gap-2 items-center justify-center ">
                     {project.title}
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <ArrowUpRight className="size-4 text-muted-foreground hover:text-primary" />
-                    </a>
+                    {project.href !== "#" && (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ArrowUpRight className="size-4 text-muted-foreground hover:text-primary" />
+                      </a>
+                    )}
                   </h3>
-                  <span className="text-muted-foreground text-xs  ">
-                    {project.createdAt}
+                  <span className="text-muted-foreground text-xs">
+                    {PLATFORM_LABELS[project.platform]}
                   </span>
                 </div>
               </AccordionTrigger>
@@ -81,15 +95,17 @@ function ProjectSection() {
                       </span>
                     ))}
                   </div>
-                  <div className="mt-0 flex items-center gap-4 justify-start">
-                    <a
-                      href={project.href}
-                      target="_blank"
-                      className="mt-4 flex  hover:text-primary gap-2 items-center justify-center "
-                    >
-                      Github / Live URL
-                    </a>
-                  </div>
+                  {project.href !== "#" && (
+                    <div className="mt-0 flex items-center gap-4 justify-start">
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        className="mt-4 flex  hover:text-primary gap-2 items-center justify-center "
+                      >
+                        Github / Live URL
+                      </a>
+                    </div>
+                  )}
                 </div>
               </AccordionContent>
             </AccordionItem>
