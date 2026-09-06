@@ -16,7 +16,7 @@ function EducationSection() {
   return (
     <section className="border-x full-line-bottom relative">
       <div className="px-4 py-2   ">
-        <h3 className="text-primary font-medium ">Education</h3>
+        <h2 className="text-primary font-medium ">Education</h2>
       </div>
       <div className=" full-line-bottom relative ">
         {EDUCATIONS.map((institute, index) => (

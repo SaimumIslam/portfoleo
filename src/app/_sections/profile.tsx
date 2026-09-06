@@ -18,11 +18,11 @@ function ProfileSection() {
         <Image
           className="size-32 rounded-full ring-1 ring-border ring-offset-2 ring-offset-background select-none"
           src="/profile.webp"
-          alt="profile"
-          loading="eager"
-          width={400}
-          height={400}
+          alt={`${ABOUT.name} profile photo`}
+          width={256}
+          height={256}
           priority
+          fetchPriority="high"
         />
       </div>
       <div className="flex flex-1 flex-col">

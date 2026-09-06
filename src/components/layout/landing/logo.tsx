@@ -1,22 +1,4 @@
-"use client";
-
 import { cn } from "@/lib/utils";
-import { motion, type Variants } from "framer-motion";
-
-const textVariants: Variants = {
-  hidden: {
-    opacity: 0,
-    letterSpacing: "-0.5em",
-  },
-  visible: {
-    opacity: 1,
-    letterSpacing: "normal",
-    transition: {
-      duration: 2,
-      ease: "easeInOut",
-    },
-  },
-};
 
 const sizes = {
   sm: "text-xl",
@@ -36,19 +18,17 @@ const AnimatedLogo = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("relative font-bold px-6 md:px-0", containerClassName)}>
-      <motion.h1
-        initial={draw ? "hidden" : undefined}
-        animate={draw ? "visible" : undefined}
-        variants={draw ? textVariants : undefined}
+    <div className={cn("relative font-bold", containerClassName)}>
+      <span
         className={cn(
-          "font-mono text-muted-foreground font-medium",
+          "block font-mono text-muted-foreground font-medium",
+          draw && "cd-logo-draw",
           sizes[size],
           className
         )}
       >
         Saimum
-      </motion.h1>
+      </span>
     </div>
   );
 };

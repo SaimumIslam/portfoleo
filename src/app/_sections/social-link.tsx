@@ -60,9 +60,9 @@ function SocialLinkSection() {
           >
             <div className="relative">{link.icon}</div>
             <div className="flex flex-col items-start grow justify-between">
-              <h3 className="font-medium group-hover/link:underline underline-offset-4 ">
+              <span className="font-medium group-hover/link:underline underline-offset-4 ">
                 {link.name}
-              </h3>
+              </span>
             </div>
             <div className="relative flex items-center justify-center shrink-0">
               <ExternalLink className="size-5 text-muted-foreground group-hover/link:text-primary" />

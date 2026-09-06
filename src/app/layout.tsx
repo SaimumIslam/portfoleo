@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/profile.webp",
+        url: "/og.webp",
         width: 1200,
         height: 1200,
         alt: SITE.name,
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE.title,
     description: SITE.description,
-    images: ["/profile.webp"],
+    images: ["/og.webp"],
   },
 };
 
@@ -71,7 +71,7 @@ const jsonLd = {
   "@type": "Person",
   name: ABOUT.name,
   url: SITE.url,
-  image: `${SITE.url}/profile.webp`,
+  image: `${SITE.url}/og.webp`,
   jobTitle: ABOUT.currentRole,
   worksFor: {
     "@type": "Organization",

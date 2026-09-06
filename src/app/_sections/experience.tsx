@@ -51,6 +51,9 @@ function ExperienceSection() {
                           href={exp.href}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`Open ${exp.company} in a new tab`}
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex size-6 shrink-0 items-center justify-center"
                         >
                           <ArrowUpRight className="size-4 text-muted-foreground hover:text-primary" />
                         </a>
