@@ -65,14 +65,13 @@ const EXPERIENCES = [
     duration: "Full-Time | Jun 2020 - Sept 2021",
     description: `Contributed to full-stack development of a social networking platform with Facebook-like features, improving security, performance, and user experience.`,
     tasks: [
-      "Developed frontend interfaces and backend logic for social networking platform features.",
-      "Implemented two-step verification and a custom role-based access control (RBAC) system to improve security.",
-      "Troubleshot production issues via source code analysis, network trace review, and configuration debugging, resulting in 15% performance improvement.",
+      "Developed full-stack web applications across multiple projects, including a social networking platform (Failureline), using React and Express; analyzed requirements and contributed to solution design in an Agile team.",
+      "Built the social feed with query-on-read, real-time notifications with WebSockets, and Elasticsearch-based search, applying pagination and caching to keep load times low as content grew and cutting response time by 15%.",
+      "Troubleshot production escalations by digging into source code, analyzing network traces, and reviewing product configurations, boosting performance by 10%.",
     ],
     badge: [
       "React.js",
-      "Node.js",
-      "JavaScript",
+      "Express.js",
       "Frontend Development",
       "Backend Development",
       "Agile",
