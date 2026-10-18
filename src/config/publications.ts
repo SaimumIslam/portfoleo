@@ -5,6 +5,7 @@ const publications = [
     publisher: "ICEEICT",
     href: "https://ieeexplore.ieee.org/document/10534443",
     duration: "May 3, 2024",
+    publishedAt: "2024-05-03",
     description: `First-authored and published a paper presenting a high-accuracy (96.90%) Bangla lemmatization system, contributing a valuable NLP resource for Bangla language processing and downstream applications.`,
     tasks: [
       "Developed a large-scale linguistic dataset with over 297,000 unique words, 50,000 synonyms, and 10,000 antonyms",
@@ -28,6 +29,7 @@ const publications = [
     publisher: "ICCIT",
     href: "https://ieeexplore.ieee.org/document/9392650",
     duration: "Apr. 4, 2021",
+    publishedAt: "2021-04-04",
     description: `First-authored a paper constructing a bilingual English-Bangla WordNet, addressing the scarcity of Bangla linguistic resources and supporting semantic analysis and word sense disambiguation.`,
     tasks: [
       "Compiled a large-scale bilingual lexical database with 247,748 English-to-Bangla and 205,344 Bangla-to-English word pairs",

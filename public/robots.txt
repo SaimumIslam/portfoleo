@@ -1,4 +1,18 @@
+# Search engines and AI assistants are welcome to crawl, cite and learn from this site.
 User-agent: *
+Allow: /
+
+# AI search, user-triggered retrieval and training crawlers — explicitly allowed
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: ClaudeBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
 Allow: /
 
 Sitemap: https://saimum.me/sitemap.xml

@@ -1,31 +1,32 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
-import {
-  IBM_Plex_Mono as FontMono,
-  IBM_Plex_Sans as FontSans,
-} from "next/font/google";
-
-import ThemeProvider from "@/providers/theme";
-import ThemeSwitcher from "@/components/layout/theme-switcher";
-import Landing from "@/components/layout/landing";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 
 import SITE from "@/config/site";
-import ABOUT from "@/config/about";
+import { buildJsonLd } from "@/lib/structured-data";
 
 import "./globals.css";
 
-const fontSans = FontSans({
-  weight: ["400", "500", "600"],
+const fontSans = Geist({
+  weight: ["300", "400", "500", "600"],
   display: "swap",
   subsets: ["latin"],
-  variable: "--cd-font-sans",
+  variable: "--font-geist",
 });
 
-const fontMono = FontMono({
-  weight: ["400", "500", "600"],
+const fontMono = Geist_Mono({
+  weight: ["400", "500"],
   display: "swap",
   subsets: ["latin"],
-  variable: "--cd-font-mono",
+  variable: "--font-geist-mono",
+});
+
+const fontSerif = Instrument_Serif({
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-instrument-serif",
 });
 
 export const metadata: Metadata = {
@@ -37,18 +38,23 @@ export const metadata: Metadata = {
   creator: SITE.name,
   alternates: {
     canonical: "/",
+    types: {
+      "text/plain": [{ url: "/llms.txt", title: "LLM-readable profile" }],
+    },
   },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
   },
   openGraph: {
-    type: "website",
+    type: "profile",
     url: SITE.url,
     siteName: SITE.name,
     title: SITE.title,
     description: SITE.description,
     locale: "en_US",
+    firstName: "Saimum",
+    lastName: "Islam",
     images: [
       {
         url: "/og.webp",
@@ -66,24 +72,9 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: ABOUT.name,
-  url: SITE.url,
-  image: `${SITE.url}/og.webp`,
-  jobTitle: ABOUT.currentRole,
-  worksFor: {
-    "@type": "Organization",
-    name: ABOUT.currentCompany,
-  },
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: ABOUT.location,
-  },
-  email: `mailto:${ABOUT.email}`,
-  description: ABOUT.introduction,
-  sameAs: Object.values(ABOUT.socialLinks),
+export const viewport: Viewport = {
+  themeColor: "#0b0c0e",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({
@@ -92,20 +83,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${fontSans.variable} ${fontMono.variable} ${fontSerif.variable}`}
+    >
       <head>
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD structured data
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd()) }}
         />
       </head>
-      <body className={`${fontSans.variable} ${fontMono.variable} `}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Landing>{children}</Landing>
-          <ThemeSwitcher className="fixed bottom-2 right-2" />
-        </ThemeProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
