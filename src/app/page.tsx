@@ -1,5 +1,6 @@
 import { About, Stack } from "./_site/about";
 import Contact from "./_site/contact";
+import Education from "./_site/education";
 import Experience from "./_site/experience";
 import Header from "./_site/header";
 import Hero from "./_site/hero";
@@ -17,6 +18,7 @@ export default function Home() {
         <Projects />
         <Research />
         <Experience />
+        <Education />
         <Contact />
       </main>
     </div>

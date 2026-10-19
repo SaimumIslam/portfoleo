@@ -1,6 +1,5 @@
-import EDUCATION from "@/config/educations";
 import EXPERIENCES from "@/config/experiences";
-import { formatRange, jobTerms } from "@/lib/profile";
+import { jobTerms } from "@/lib/profile";
 
 import Em from "./em";
 
@@ -52,8 +51,6 @@ function Bullets({ items }: { items: string[] }) {
 }
 
 export default function Experience() {
-  const [university, ...schools] = EDUCATION;
-
   return (
     <section
       id="experience"
@@ -91,30 +88,6 @@ export default function Experience() {
             </Entry>
           );
         })}
-
-        <h3 className="eyebrow mt-16 mb-2 text-faint">Education</h3>
-        <Entry
-          title={university.institution}
-          meta={`BSc & MSc, CSE · ${formatRange(university.duration)}`}
-        >
-          <p className="m-0 text-base leading-[1.6] text-pretty text-soft">
-            {university.description}
-          </p>
-          <Bullets items={university.points} />
-        </Entry>
-        {schools.map((school) => (
-          <div
-            key={school.institution}
-            className="flex flex-col gap-1.5 border-t border-ink/10 py-[26px]"
-          >
-            <span className="text-[22px] tracking-[-.02em]">
-              {school.institution}
-            </span>
-            <span className="font-mono text-xs text-muted">
-              {formatRange(school.duration)}
-            </span>
-          </div>
-        ))}
       </div>
     </section>
   );

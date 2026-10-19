@@ -44,7 +44,7 @@ export default function Contact() {
     >
       <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,420px),1fr))] items-end gap-12">
         <div className="flex flex-col gap-7">
-          <p className="eyebrow m-0 text-faint">06 — Contact</p>
+          <p className="eyebrow m-0 text-faint">07 — Contact</p>
           <h2
             id="contact-title"
             className="m-0 text-[clamp(48px,8vw,112px)] leading-[.92] font-normal tracking-[-.055em]"

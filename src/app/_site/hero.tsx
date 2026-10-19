@@ -22,8 +22,7 @@ export default function Hero() {
             Full-Stack Software Engineer
           </p>
           <h1 className="m-0 text-[clamp(48px,7.2vw,96px)] leading-[.96] font-normal tracking-[-.045em] text-balance">
-            Building learning products that{" "}
-            <Em className="text-accent">think</Em> and scale.
+            Products that <Em className="text-accent">think</Em> and scale.
           </h1>
           <p className="m-0 max-w-[520px] text-lg leading-[1.6] text-pretty text-muted">
             I'm {ABOUT.name} — a {ABOUT.currentRole.toLowerCase()} at{" "}
