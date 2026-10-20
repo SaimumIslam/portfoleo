@@ -1,7 +1,6 @@
 const about = {
   name: "Saimum Islam",
   currentRole: "Senior Software Engineer",
-  currentCompany: "Jukto Digital",
   location: "Khulna, Bangladesh",
   mobile: "+8801763706245",
   email: "saimumislam27@gmail.com", // Replace with actual email if available

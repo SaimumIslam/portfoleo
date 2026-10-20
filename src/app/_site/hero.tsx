@@ -25,8 +25,8 @@ export default function Hero() {
             Products that <Em className="text-accent">think</Em> and scale.
           </h1>
           <p className="m-0 max-w-[520px] text-lg leading-[1.6] text-pretty text-muted">
-            I'm {ABOUT.name} — a {ABOUT.currentRole.toLowerCase()} at{" "}
-            {ABOUT.currentCompany} in {ABOUT.location}, with nearly six years
+            I'm {ABOUT.name} — a {ABOUT.currentRole.toLowerCase()} in{" "}
+            {ABOUT.location}, with nearly six years
             designing and shipping secure, scalable web, desktop and mobile apps
             with React, React Native, Django REST Framework, Koa.js, Rust and
             Kotlin. Most at home in EdTech, increasingly obsessed with AI and

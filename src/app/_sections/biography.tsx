@@ -1,11 +1,4 @@
-import {
-  BriefcaseBusiness,
-  CodeXml,
-  Globe,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { CodeXml, Globe, Mail, MapPin, Phone } from "lucide-react";
 
 import ABOUT from "@/config/about";
 
@@ -14,11 +7,6 @@ function BioSection() {
     {
       icon: CodeXml,
       title: ABOUT.currentRole,
-      type: "text",
-    },
-    {
-      icon: BriefcaseBusiness,
-      title: ABOUT.currentCompany,
       type: "text",
     },
     { icon: MapPin, title: ABOUT.location, type: "text" },

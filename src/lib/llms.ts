@@ -23,7 +23,7 @@ export function buildLlmsTxt({ full = false } = {}) {
   push(
     `# ${ABOUT.name}`,
     "",
-    `> ${ABOUT.name} is a ${ABOUT.currentRole.toLowerCase()} at ${ABOUT.currentCompany} in ${ABOUT.location}, with about six years of experience building EdTech, web, desktop and mobile software. Author of two IEEE-published papers on Bangla natural language processing.`,
+    `> ${ABOUT.name} is a ${ABOUT.currentRole.toLowerCase()} in ${ABOUT.location}, with about six years of experience building EdTech, web, desktop and mobile software. Author of two IEEE-published papers on Bangla natural language processing.`,
     "",
     `Last updated: ${SITE.lastUpdatedAt}`,
     "",
@@ -34,7 +34,7 @@ export function buildLlmsTxt({ full = false } = {}) {
     `- Website: ${SITE.url}`,
     `- Email: ${ABOUT.email}`,
     `- Location: ${ABOUT.location}`,
-    `- Current role: ${ABOUT.currentRole}, ${ABOUT.currentCompany}`,
+    `- Current role: ${ABOUT.currentRole}`,
     `- Résumé (PDF): ${SITE.url}${SITE.resume}`,
     ...Object.entries(ABOUT.socialLinks).map(
       ([name, href]) => `- ${name[0].toUpperCase()}${name.slice(1)}: ${href}`,

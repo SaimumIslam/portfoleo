@@ -1,6 +1,5 @@
 import ABOUT from "@/config/about";
 import EDUCATION from "@/config/educations";
-import EXPERIENCES from "@/config/experiences";
 import PUBLICATIONS from "@/config/publications";
 import SITE from "@/config/site";
 import STACK from "@/config/stack";
@@ -19,7 +18,6 @@ const OPERATING_SYSTEMS: Record<string, string> = {
 };
 
 export function buildJsonLd() {
-  const current = EXPERIENCES[0];
 
   return {
     "@context": "https://schema.org",
@@ -53,11 +51,6 @@ export function buildJsonLd() {
         email: `mailto:${ABOUT.email}`,
         jobTitle: ABOUT.currentRole,
         description: ABOUT.introduction,
-        worksFor: {
-          "@type": "Organization",
-          name: current.company,
-          url: current.href,
-        },
         address: {
           "@type": "PostalAddress",
           addressLocality: "Khulna",
