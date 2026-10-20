@@ -85,15 +85,7 @@ const projects: Project[] = [
       "Coaching back office with fees, bKash/Nagad verification and finance reports",
       "CI/CD via GitHub Actions, GHCR and Docker with staging and production",
     ],
-    badge: [
-      "Next.js",
-      "TypeScript",
-      "Go",
-      "PostgreSQL",
-      "Redis",
-      "TypeScript",
-      "Docker",
-    ],
+    badge: ["Next.js", "TypeScript", "Go", "PostgreSQL", "Redis", "Docker"],
   },
   {
     id: 11,

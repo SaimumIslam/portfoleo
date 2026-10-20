@@ -89,7 +89,7 @@ export default function Projects() {
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm text-accent hover:text-ink"
+                    className="-my-3 inline-block py-3 text-sm text-accent hover:text-ink"
                   >
                     {hostOf(project.href)} <span aria-hidden="true">↗</span>
                     <span className="sr-only"> (opens in a new tab)</span>

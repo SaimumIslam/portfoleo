@@ -57,7 +57,7 @@ export default function Contact() {
             Always open to collaboration — say hi at{" "}
             <a
               href={`mailto:${ABOUT.email}`}
-              className="text-ink underline decoration-ink/30 underline-offset-4 hover:text-accent"
+              className="py-2.5 text-ink underline decoration-ink/30 underline-offset-4 hover:text-accent"
             >
               {ABOUT.email}
             </a>
@@ -105,14 +105,14 @@ export default function Contact() {
           © {SITE.lastUpdatedAt.slice(0, 4)} {ABOUT.name} · Last updated{" "}
           <time dateTime={SITE.lastUpdatedAt}>{lastUpdated}</time>
         </span>
-        <ul className="m-0 flex list-none flex-wrap gap-6 p-0">
+        <ul className="m-0 flex list-none flex-wrap gap-x-6 gap-y-7 p-0">
           {SOCIALS.map((social) => (
             <li key={social.label}>
               <a
                 href={social.href}
                 target="_blank"
                 rel="me noopener noreferrer"
-                className="text-muted hover:text-accent"
+                className="-my-3 inline-block py-3 text-muted hover:text-accent"
               >
                 {social.label}
               </a>

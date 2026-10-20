@@ -24,7 +24,7 @@ export default function Header() {
       >
         <a
           href="#top"
-          className="flex items-center gap-2.5 text-[15px] font-medium tracking-[-.01em]"
+          className="-my-2 flex items-center gap-2.5 py-2 text-[15px] font-medium tracking-[-.01em]"
         >
           <span
             aria-hidden="true"
