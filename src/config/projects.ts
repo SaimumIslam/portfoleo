@@ -51,7 +51,7 @@ const projects: Project[] = [
       "Collection runner and headless CLI with JUnit and SARIF reports for CI",
       "Importers for Postman, Insomnia, Bruno, OpenAPI, HAR and curl; ~1,200 tests",
     ],
-    badge: ["Rust", "Tauri 2", "SolidJS", "TypeScript", "gRPC", "SQLite"],
+    badge: ["Tauri 2", "SolidJS", "TypeScript", "SQLite"],
   },
   {
     id: 9,
@@ -68,11 +68,11 @@ const projects: Project[] = [
       "Atomic financial writes via Rust-side sqlx transactions",
       "Barcode scanning, thermal receipts and 246 tests on real SQLite migrations",
     ],
-    badge: ["Tauri 2", "Rust", "React", "TypeScript", "SQLite"],
+    badge: ["Tauri 2", "React", "TypeScript", "SQLite"],
   },
   {
     id: 10,
-    title: "Correctly",
+    title: "Sarothi",
     platform: "web",
     href: "https://correctly.faithdevs.com",
     createdAt: "Jul 2026 -- Present",
@@ -85,7 +85,15 @@ const projects: Project[] = [
       "Coaching back office with fees, bKash/Nagad verification and finance reports",
       "CI/CD via GitHub Actions, GHCR and Docker with staging and production",
     ],
-    badge: ["Go", "PostgreSQL", "Redis", "Next.js", "TypeScript", "Docker"],
+    badge: [
+      "Next.js",
+      "TypeScript",
+      "Go",
+      "PostgreSQL",
+      "Redis",
+      "TypeScript",
+      "Docker",
+    ],
   },
   {
     id: 11,
@@ -167,7 +175,7 @@ const projects: Project[] = [
       "SQLite sessions with full-text search and crash recovery with context resume",
       "Strict security model: sandboxed webview, CSP, argv-only spawn, no stored credentials",
     ],
-    badge: ["Rust", "Tauri 2", "React", "TypeScript", "Tokio", "SQLite"],
+    badge: ["Tauri 2", "React", "TypeScript", "Tokio", "SQLite"],
   },
   {
     id: 4,
@@ -218,13 +226,13 @@ const projects: Project[] = [
       "AES-256-GCM encrypted backups with Google Drive sync over OAuth PKCE",
       "Native silent printing on Windows, macOS and Linux",
     ],
-    badge: ["Tauri 2", "Rust", "React", "TypeScript", "SQLite"],
+    badge: ["Tauri 2", "React", "TypeScript", "SQLite"],
   },
   {
     id: 13,
     title: "Crawler Studio",
     platform: "cli",
-    href: "#",
+    href: "https://github.com/SaimumIslam/crawler",
     createdAt: "2026",
     description:
       "Template-driven web crawler configured in YAML, with tiered fetch escalation, selector or Claude-powered LLM extraction, SQLite deduplication across scheduled runs, and a local React dashboard.",
@@ -235,7 +243,7 @@ const projects: Project[] = [
       "Multi-threaded frontier with robots.txt, rate limiting and proxy rotation",
       "Flask + React dashboard with template editor, live logs and scheduler",
     ],
-    badge: ["Python", "Playwright", "SQLite", "Flask", "React", "Claude API"],
+    badge: ["Python", "Playwright", "SQLite", "React", "AI API"],
   },
   {
     id: 14,
