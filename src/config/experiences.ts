@@ -6,7 +6,7 @@ const EXPERIENCES = [
     job: false,
     location: "Khulna, Bangladesh",
     href: "https://jukto.digital/",
-    duration: "Full-Time | Oct 2021 - Present",
+    duration: "Full-Time | Oct 2021 - Oct 2026",
     description: `Led the end-to-end development of a Learning Management System (LMS) focused on automating and scaling core academic functions, with a practical foundation for AI-integrated education systems.`,
     tasks: [
       "Built modular assessment and reporting tools enabling dynamic form generation, customizable evaluation methods, and automated progress tracking.",
