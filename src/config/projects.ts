@@ -31,7 +31,7 @@ const projects: Project[] = [
       "30+ deterministic simulation engines — graph search, DP, sorting, neural nets, attention, RL — behind one frame-based playback system",
       "54 timed interview quizzes, 102 coding problems and 57 pattern guides",
       "SM-2 spaced repetition over 2,414 flashcards with a weak-spot drill",
-      "Kotlin-to-JSON content pipeline keeping a ~200k-line Android app and ~80k-line SwiftUI port in sync",
+      "Kotlin-to-JSON content pipeline that ships all 504 topics to both the Android app and its SwiftUI port from one source",
       "Freemium: lifetime IAP, monthly subscription, rewarded-ad unlocks and capped interstitials",
     ],
     badge: ["Kotlin", "Compose", "Swift", "SwiftUI", "StoreKit 2", "AdMob"],
