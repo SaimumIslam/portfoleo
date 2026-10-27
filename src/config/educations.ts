@@ -11,7 +11,6 @@ const education = [
       "Competed in onsite inter-university contests including ACM-ICPC and NCPC, and solved ~400 problems across online judges",
       "Convenor of KU CSE Fest 2019 & CSE Tour 2019; finance committee member for KU Rag Day 2019 & Bangla New Year Festival 2018",
       "Completed advanced coursework in AI, Pattern Recognition, Data Mining, Distributed Databases, Probability & Statistics, and Petri Net System Modeling",
-      "Played for the department volleyball and football teams",
     ],
   },
   // {
