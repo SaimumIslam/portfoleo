@@ -241,18 +241,18 @@ const projects: Project[] = [
     id: 14,
     title: "Storyteller",
     platform: "cli",
-    href: "#", // internal tool
+    href: "https://github.com/SaimumIslam/storyteller",
     createdAt: "2025",
     description:
-      "RAG-based CLI that ingests your own PDFs and text, then generates Bangla Facebook-style posts on any topic with proper citations — Bangla-first normalization, OCR fallback, and a customizable writing-style system.",
+      "Open-source bilingual (Bangla/English) RAG tool that turns your own PDF and text library into source-cited posts — OCR-backed ingestion, cross-lingual vector search, and an MCP server so Claude, Cursor and VS Code can write from your books.",
     features: [
-      "Retrieval-augmented generation grounded in your own books, never fabricated",
-      "Bangla-first Unicode normalization with ZWJ, quote, and danda cleanup",
-      "Tesseract Bangla OCR fallback for image-based PDF pages",
-      "Style system for tone and length via few-shot Markdown examples",
-      "Any OpenRouter model via bge-m3 embeddings and ChromaDB vector store",
+      "Retrieval-augmented generation grounded in your own books, with book and page citations",
+      "Bangla-aware Unicode normalization, script-ratio filtering and front/back-matter removal",
+      "Tesseract OCR fallback for scanned PDF pages and SHA-256 incremental ingest",
+      "Cross-lingual retrieval with multilingual bge-m3 embeddings in ChromaDB",
+      "MCP server (6 tools) and Claude Code plugin; ships via pip, uvx and Docker",
     ],
-    badge: ["Python", "RAG", "ChromaDB", "PyTorch", "OpenRouter", "OCR"],
+    badge: ["Python", "RAG", "ChromaDB", "MCP", "OCR", "Docker"],
   },
   {
     id: 15,
@@ -310,7 +310,7 @@ const projects: Project[] = [
     id: 17,
     title: "Brandy",
     platform: "desktop",
-    href: "#", // in development
+    href: "https://github.com/SaimumIslam/brandy", // in development
     createdAt: "2026",
     description:
       "Offline-first desktop marketing studio that turns product screenshots into every asset a product needs — device mockups, App Store / Play Store / Microsoft Store listings, social graphics, ad formats, and full campaigns. Built with Tauri 2, React, and TypeScript.",
@@ -337,7 +337,7 @@ const projects: Project[] = [
       "Teacher-facing evaluation management",
       "Streamlined academic workflow",
     ],
-    badge: ["PHP", "Python", "HTML", "CSS", "JavaScript"],
+    badge: ["PHP", "Simtire", "HTML", "CSS", "JavaScript"],
   },
   {
     id: 19,
