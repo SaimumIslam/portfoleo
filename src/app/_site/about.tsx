@@ -2,7 +2,7 @@ import STACK from "@/config/stack";
 
 import Em from "./em";
 
-const TRAITS = ["Fast learner", "Organized", "Dedicated", "Honest"];
+const TRAITS = ["Ships end-to-end", "Built for scale", "Security-minded", "AI-native"];
 
 export function About() {
   return (

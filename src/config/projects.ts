@@ -224,7 +224,7 @@ const projects: Project[] = [
     id: 13,
     title: "Crawler Studio",
     platform: "cli",
-    href: "https://saimumislam.github.io/crawler",
+    href: "https://saimumislam.github.io/crawler/",
     createdAt: "2026",
     description:
       "Template-driven web crawler configured in YAML, with tiered fetch escalation, selector or Claude-powered LLM extraction, SQLite deduplication across scheduled runs, and a local React dashboard.",
