@@ -8,30 +8,30 @@ const STACK: StackGroup[] = [
   {
     code: "LANG",
     title: "Languages",
-    items: ["JavaScript", "TypeScript", "Python", "Go", "Rust", "HTML", "CSS"],
+    items: ["JavaScript", "TypeScript", "Python", "Go", "HTML", "CSS"],
   },
   {
     code: "WEB",
     title: "Frontend & Mobile",
-    items: ["React", "Next.js", "Koa.js", "Tailwind", "Shardcn", "Material UI"],
+    items: ["React", "Next.js", "Tailwind", "Shardcn", "Material UI"],
   },
   {
     code: "API",
     title: "Backend & Data",
     items: [
       "Django REST",
-      "Node.js",
+      "Koa.js",
+      "Express.js",
       "PostgreSQL",
       "MySQL",
       "MongoDB",
       "Redis",
-      "SQLite",
     ],
   },
   {
     code: "OPS",
     title: "Infra & Tools",
-    items: ["AWS", "Docker", "LaTeX", "Git", "Claude", "Slack", "Jira"],
+    items: ["AWS", "Docker", "Git", "Claude", "Slack", "Jira", "LaTeX"],
   },
 ];
 
