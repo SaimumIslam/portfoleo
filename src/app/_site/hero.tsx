@@ -27,9 +27,9 @@ export default function Hero() {
           <p className="m-0 max-w-[520px] text-lg leading-[1.6] text-pretty text-muted">
             I'm {ABOUT.name} — a {ABOUT.currentRole.toLowerCase()} in{" "}
             {ABOUT.location} with nearly six years of designing and shipping
-            secure, scalable web, desktop and mobile apps using React (Next.js),
-            Node.js, Django REST Framework, Rust (Tauri) and Kotlin. Most at home
-            in EdTech, increasingly focused on AI and AWS.
+            secure, scalable web and mobile apps using React (Next.js), React
+            Native, Node.js and Django REST Framework. Most at home in EdTech,
+            increasingly focused on AI and AWS.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
